@@ -126,8 +126,8 @@ public class Personagem {
 	}
 
 	public void rolarDado() {
-		System.out.println(
-				"Selecione o tipo da jogada:\n1 - Teste de resistência\n2 - Teste de perícia\n3 - Jogada de ataque");
+		System.out.println("---Turno de " + getNome()+ "---");
+		System.out.println("Selecione o tipo da jogada:\n1 - Teste de resistência\n2 - Teste de perícia\n3 - Jogada de ataque");
 		int tipoTeste = scan.nextInt();
 		scan.nextLine();
 		if (tipoTeste == 1) {
@@ -459,3 +459,4 @@ public class Personagem {
 	}
 
 }
+
