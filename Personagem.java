@@ -127,7 +127,7 @@ public class Personagem {
 
 	public void rolarDado() {
 		System.out.println("---Turno de " + getNome()+ "---");
-		System.out.println("Selecione o tipo da jogada:\n1 - Teste de resistência\n2 - Teste de perícia\n3 - Jogada de ataque");
+		System.out.println("Selecione o tipo da jogada:\n1 - Teste de resistência\n2 - Teste de perícia\n3 - Jogada de ataque\n4 - Pular turno");
 		int tipoTeste = scan.nextInt();
 		scan.nextLine();
 		if (tipoTeste == 1) {
@@ -136,8 +136,10 @@ public class Personagem {
 			pericias();
 		} else if (tipoTeste == 3) {
 			ataque();
-		} else {
-			System.out.println("---TIPO INVÁLIDO---");
+		} else if (tipoTeste == 4) {
+			System.out.println("---TURNO FINALIZADO---");
+		}else {
+			System.out.println("---OPÇÃO INVÁLIDA---");
 		}
 	}
 
@@ -459,4 +461,5 @@ public class Personagem {
 	}
 
 }
+
 
