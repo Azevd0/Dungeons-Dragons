@@ -352,7 +352,7 @@ public class Personagem {
 				System.out.println(d1 + " e " + d2 + ", pegando " + Math.min(d1, d2));
 			} else {
 				int dace = ran.nextInt(1, 21);
-				d20 = dace + habilidade + getBonusProficiencia();
+				d20 = dace + habilidade;
 				System.out.println("Seu dado foi " + dace);
 			}
 
@@ -494,3 +494,4 @@ public class Personagem {
 	}
 
 }
+
